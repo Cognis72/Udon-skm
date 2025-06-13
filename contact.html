@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="page-title">UDON SKM</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">UDON SKM</div>
+    <button id="hamburger">☰</button>
+    <nav id="nav-links">
+      <a href="index.html" id="nav-home">หน้าแรก</a>
+      <a href="about.html" id="nav-about">เกี่ยวกับเรา</a>
+      <a href="jobs.html" id="nav-jobs">งานที่เปิดรับ</a>
+      <a href="process.html" id="nav-process">ขั้นตอน</a>
+      <a href="contact.html" id="nav-contact">ติดต่อ</a>
+      <button onclick="changeLanguage('en')">EN</button>
+      <button onclick="changeLanguage('th')">TH</button>
+    </nav>
+  </header>
+
+  <section>
+    <h1 id="contact-heading">ติดต่อเรา</h1>
+    <p id="contact-desc">หากมีคำถามหรือต้องการสมัคร กรุณากรอกแบบฟอร์มด้านล่าง</p>
+
+    <form action="https://formspree.io/f/yourFormID" method="POST" id="contact-form">
+      <label for="name" id="label-name">ชื่อของคุณ</label><br />
+      <input type="text" name="name" required><br /><br />
+
+      <label for="email" id="label-email">อีเมล</label><br />
+      <input type="email" name="email" required><br /><br />
+
+      <label for="message" id="label-message">ข้อความ</label><br />
+      <textarea name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit" id="submit-btn">ส่งข้อความ</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 UDON SKM. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
