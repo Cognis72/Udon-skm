@@ -21,7 +21,14 @@ const translations = {
     "label-name": "ชื่อของคุณ",
     "label-email": "อีเมล",
     "label-message": "ข้อความ",
-    "submit-btn": "ส่งข้อความ"
+    "submit-btn": "ส่งข้อความ",
+    "features-heading": "ทำไมต้องเลือก UDON SKM?",
+    "feature-1-title": "เครือข่ายระดับโลก",
+    "feature-1-desc": "โอกาสทำงานในญี่ปุ่น ไต้หวัน เกาหลี และอื่น ๆ",
+    "feature-2-title": "คำแนะนำจากผู้เชี่ยวชาญ",
+    "feature-2-desc": "ประสบการณ์กว่า 10 ปีในด้านจัดหางานต่างประเทศ",
+    "feature-3-title": "ดูแลครบทุกขั้นตอน",
+    "feature-3-desc": "ตั้งแต่สมัครจนเดินทาง เราช่วยคุณทุกขั้นตอน"
   },
   en: {
     "page-title": "Home - UDON SKM",
@@ -45,7 +52,14 @@ const translations = {
     "label-name": "Your Name",
     "label-email": "Email",
     "label-message": "Message",
-    "submit-btn": "Send Message"
+    "submit-btn": "Send Message",
+    "features-heading": "Why Choose UDON SKM?",
+    "feature-1-title": "Global Network",
+    "feature-1-desc": "Opportunities across Japan, Taiwan, Korea, and more.",
+    "feature-2-title": "Expert Guidance",
+    "feature-2-desc": "10+ years of experience in legal overseas job placement.",
+    "feature-3-title": "Full Support",
+    "feature-3-desc": "From application to arrival, we help every step.",
   }
 };
 
