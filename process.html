@@ -1,35 +1,309 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">ขั้นตอน - UDON SKM</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Process - UDON SKM - Overseas Job Placement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">UDON SKM</div>
-    <button id="hamburger">☰</button>
-    <nav id="nav-links">
-      <a href="process.html" id="nav-home">หน้าแรก</a>
-      <a href="about.html" id="nav-about">เกี่ยวกับเรา</a>
-      <a href="jobs.html" id="nav-jobs">งานที่เปิดรับ</a>
-      <a href="process.html" id="nav-process">ขั้นตอน</a>
-      <a href="contact.html" id="nav-contact">ติดต่อ</a>
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('th')">TH</button>
-    </nav>
-  </header>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo/Brand -->
+                <div class="nav-logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">UDON SKM</a></h2>
+                </div>
 
-  <section>
-    <h1 id="process-heading">บริการจัดหางานไปต่างประเทศอย่างถูกกฎหมาย</h1>
-    <p id="process-desc">พร้อมดูแลทุกขั้นตอน โดยทีมงานมืออาชีพ</p>
-    <a  
-  </section>
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-en="About" data-th="เกี่ยวกับเรา">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html" class="nav-link" data-en="Jobs" data-th="งาน">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="process.html" class="nav-link active" data-en="Process" data-th="ขั้นตอน">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                    </li>
+                </ul>
 
-  <footer>
-    <p>© 2025 UDON SKM. All rights reserved.</p>
-  </footer>
-  <script src="assets/js/script.js"></script>
+                <!-- Controls: Language, Theme Toggle and Mobile Menu Button -->
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-text">TH</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title" data-en="Our Placement Process" data-th="ขั้นตอนการจัดหางานของเรา">Our Placement Process</h1>
+                    <p class="page-subtitle" data-en="A comprehensive, step-by-step approach to ensure your successful overseas job placement." data-th="แนวทางที่ครอบคลุมและเป็นขั้นตอนเพื่อให้มั่นใจว่าการจัดหางานต่างประเทศของคุณจะประสบความสำเร็จ">A comprehensive, step-by-step approach to ensure your successful overseas job placement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Steps -->
+        <section class="process-steps">
+            <div class="container">
+                <div class="steps-timeline">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Initial Consultation</h3>
+                            <p>We begin with a comprehensive consultation to understand your career goals, skills, and preferences. Our experienced counselors will assess your qualifications and match them with suitable opportunities.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Career assessment and goal setting</li>
+                                    <li>Skills evaluation and gap analysis</li>
+                                    <li>Country and industry preference discussion</li>
+                                    <li>Documentation requirements overview</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 1-2 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Document Preparation</h3>
+                            <p>Our team assists you in preparing all necessary documents, ensuring they meet international standards and specific country requirements.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Resume/CV optimization for target market</li>
+                                    <li>Educational credential evaluation</li>
+                                    <li>Professional certification verification</li>
+                                    <li>Language proficiency test preparation</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 2-4 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Job Matching & Application</h3>
+                            <p>We match your profile with suitable job opportunities and handle the application process on your behalf, leveraging our network of international employers.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Job opportunity identification</li>
+                                    <li>Application submission to employers</li>
+                                    <li>Initial employer screening coordination</li>
+                                    <li>Interview scheduling and preparation</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 3-6 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Interview & Selection</h3>
+                            <p>We provide comprehensive interview preparation and support you through the selection process, including technical assessments and cultural fit evaluations.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Interview coaching and mock sessions</li>
+                                    <li>Technical skill assessment preparation</li>
+                                    <li>Cultural orientation and tips</li>
+                                    <li>Salary negotiation guidance</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 2-4 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Visa & Documentation</h3>
+                            <p>Once you receive a job offer, we guide you through the visa application process and ensure all legal requirements are met for your destination country.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Work visa application assistance</li>
+                                    <li>Medical examination coordination</li>
+                                    <li>Police clearance certificate guidance</li>
+                                    <li>Embassy appointment scheduling</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 4-8 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>Pre-Departure Support</h3>
+                            <p>We provide comprehensive pre-departure orientation to ensure you're fully prepared for your new life and career abroad.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Cultural orientation sessions</li>
+                                    <li>Accommodation assistance</li>
+                                    <li>Banking and financial setup guidance</li>
+                                    <li>Travel arrangements support</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: 1-2 weeks</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <h3>Post-Arrival Support</h3>
+                            <p>Our support doesn't end when you arrive. We provide ongoing assistance to ensure your smooth integration into your new workplace and community.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Airport pickup and initial orientation</li>
+                                    <li>First week settlement assistance</li>
+                                    <li>Workplace integration support</li>
+                                    <li>Ongoing consultation for first 6 months</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duration: Ongoing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Factors -->
+        <section class="success-factors">
+            <div class="container">
+                <h2 class="section-title">What Makes Our Process Successful</h2>
+                <div class="factors-grid">
+                    <div class="factor-card">
+                        <div class="factor-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                            </svg>
+                        </div>
+                        <h3>Personalized Approach</h3>
+                        <p>Every candidate receives individual attention and customized solutions based on their unique profile and goals.</p>
+                    </div>
+                    <div class="factor-card">
+                        <div class="factor-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3>Time Efficiency</h3>
+                        <p>Our streamlined process and established relationships help reduce placement time while maintaining quality.</p>
+                    </div>
+                    <div class="factor-card">
+                        <div class="factor-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Expert Team</h3>
+                        <p>Our consultants have extensive experience in international recruitment and destination country expertise.</p>
+                    </div>
+                    <div class="factor-card">
+                        <div class="factor-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Proven Track Record</h3>
+                        <p>With over 5,000 successful placements, our process has been refined and proven effective across multiple industries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Overview -->
+        <section class="timeline-overview">
+            <div class="container">
+                <h2 class="section-title">Typical Timeline</h2>
+                <div class="timeline-summary">
+                    <div class="timeline-card">
+                        <h3>Fast Track</h3>
+                        <div class="timeline-duration">3-4 months</div>
+                        <p>For candidates with strong profiles and in-demand skills</p>
+                    </div>
+                    <div class="timeline-card">
+                        <h3>Standard Process</h3>
+                        <div class="timeline-duration">4-6 months</div>
+                        <p>Most common timeline for regular placements</p>
+                    </div>
+                    <div class="timeline-card">
+                        <h3>Comprehensive</h3>
+                        <div class="timeline-duration">6-8 months</div>
+                        <p>For specialized roles or additional training requirements</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="process-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Begin Your Journey?</h2>
+                    <p>Start your overseas career journey today. Our experienced team is ready to guide you through every step of the process.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-button primary">Start Your Application</a>
+                        <a href="jobs.html" class="cta-button secondary">View Available Jobs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>UDON SKM</h3>
+                    <p>Your trusted partner for overseas career opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UDON SKM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

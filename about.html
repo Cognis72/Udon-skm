@@ -1,35 +1,164 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">เกี่ยวกับเรา - UDON SKM</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UDON SKM - Overseas Job Placement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">UDON SKM</div>
-    <button id="hamburger">☰</button>
-    <nav id="nav-links">
-      <a href="about.html" id="nav-home">หน้าแรก</a>
-      <a href="about.html" id="nav-about">เกี่ยวกับเรา</a>
-      <a href="jobs.html" id="nav-jobs">งานที่เปิดรับ</a>
-      <a href="process.html" id="nav-process">ขั้นตอน</a>
-      <a href="contact.html" id="nav-contact">ติดต่อ</a>
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('th')">TH</button>
-    </nav>
-  </header>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo/Brand -->
+                <div class="nav-logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">UDON SKM</a></h2>
+                </div>
 
-  <section>
-    <h1 id="about-heading">บริการจัดหางานไปต่างประเทศอย่างถูกกฎหมาย</h1>
-    <p id="about-desc">พร้อมดูแลทุกขั้นตอน โดยทีมงานมืออาชีพ</p>
-    <a  
-  </section>
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active" data-en="About" data-th="เกี่ยวกับเรา">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html" class="nav-link" data-en="Jobs" data-th="งาน">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="process.html" class="nav-link" data-en="Process" data-th="ขั้นตอน">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                    </li>
+                </ul>
 
-  <footer>
-    <p>© 2025 UDON SKM. All rights reserved.</p>
-  </footer>
-  <script src="assets/js/script.js"></script>
+                <!-- Controls: Language, Theme Toggle and Mobile Menu Button -->
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-text">TH</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title" data-en="About UDON SKM" data-th="เกี่ยวกับ UDON SKM">About UDON SKM</h1>
+                    <p class="page-subtitle" data-en="Your trusted partner in overseas career opportunities with over a decade of experience in international job placement." data-th="พันธมิตรที่เชื่อถือได้สำหรับโอกาสอาชีพต่างประเทศ ด้วยประสบการณ์กว่าทศวรรษในการจัดหางานระหว่างประเทศ">Your trusted partner in overseas career opportunities with over a decade of experience in international job placement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 data-en="Our Story" data-th="เรื่องราวของเรา">Our Story</h2>
+                        <p data-en="Founded in 2010, UDON SKM has been at the forefront of connecting talented professionals with prestigious overseas employment opportunities. We understand that taking the leap to work abroad is a significant life decision, and we're here to make that journey as smooth and successful as possible." data-th="ก่อตั้งขึ้นในปี 2010 UDON SKM ได้เป็นผู้นำในการเชื่อมโยงผู้เชี่ยวชาญที่มีความสามารถกับโอกาสการจ้างงานต่างประเทศที่มีชื่อเสียง เราเข้าใจว่าการตัดสินใจไปทำงานต่างประเทศเป็นการตัดสินใจที่สำคัญในชีวิต และเราอยู่ที่นี่เพื่อทำให้การเดินทางนั้นราบรื่นและประสบความสำเร็จมากที่สุด">Founded in 2010, UDON SKM has been at the forefront of connecting talented professionals with prestigious overseas employment opportunities. We understand that taking the leap to work abroad is a significant life decision, and we're here to make that journey as smooth and successful as possible.</p>
+                        
+                        <p data-en="Our team of experienced consultants has helped thousands of professionals secure positions in countries across Asia, Europe, North America, and beyond. We pride ourselves on our personalized approach, ensuring that each candidate finds not just a job, but the right career opportunity that aligns with their goals and aspirations." data-th="ทีมที่ปรึกษาผู้มีประสบการณ์ของเราได้ช่วยเหลือผู้เชี่ยวชาญหลายพันคนในการรับตำแหน่งงานในประเทศต่างๆ ทั่วเอเชีย ยุโรป อเมริกาเหนือ และอื่นๆ เราภูมิใจในแนวทางเฉพาะบุคคลของเรา เพื่อให้แน่ใจว่าผู้สมัครแต่ละคนจะได้ไม่เพียงแค่งาน แต่เป็นโอกาสอาชีพที่เหมาะสมที่สอดคล้องกับเป้าหมายและความใฝ่ฝันของพวกเขา">Our team of experienced consultants has helped thousands of professionals secure positions in countries across Asia, Europe, North America, and beyond. We pride ourselves on our personalized approach, ensuring that each candidate finds not just a job, but the right career opportunity that aligns with their goals and aspirations.</p>
+
+                        <h3 data-en="Our Mission" data-th="พันธกิจของเรา">Our Mission</h3>
+                        <p data-en="To bridge the gap between exceptional talent and global opportunities, creating pathways for professional growth and cultural exchange that benefit both individuals and organizations worldwide." data-th="เพื่อเชื่อมโยงช่องว่างระหว่างความสามารถที่โดดเด่นและโอกาสระดับโลก สร้างเส้นทางสำหรับการเติบโตทางวิชาชีพและการแลกเปลี่ยนทางวัฒนธรรมที่เป็นประโยชน์ต่อทั้งบุคคลและองค์กรทั่วโลก">To bridge the gap between exceptional talent and global opportunities, creating pathways for professional growth and cultural exchange that benefit both individuals and organizations worldwide.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label" data-en="Successful Placements" data-th="การจัดหางานที่สำเร็จ">Successful Placements</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-en="Partner Countries" data-th="ประเทศพันธมิตร">Partner Countries</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label" data-en="Years of Experience" data-th="ปีของประสบการณ์">Years of Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label" data-en="Client Satisfaction" data-th="ความพึงพอใจของลูกค้า">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Values Section -->
+                <div class="values-section">
+                    <h2 data-en="Our Values" data-th="ค่านิยมของเรา">Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 data-en="Excellence" data-th="ความเป็นเลิศ">Excellence</h3>
+                            <p data-en="We maintain the highest standards in everything we do, from candidate screening to placement support." data-th="เรายึดมั่นในมาตรฐานสูงสุดในทุกสิ่งที่เราทำ ตั้งแต่การคัดเลือกผู้สมัครไปจนถึงการสนับสนุนการจัดหางาน">We maintain the highest standards in everything we do, from candidate screening to placement support.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h3 data-en="Integrity" data-th="ความซื่อสัตย์">Integrity</h3>
+                            <p data-en="Honest, transparent communication and ethical practices form the foundation of our relationships." data-th="การสื่อสารที่ซื่อสัตย์และโปร่งใส และการปฏิบัติตามจริยธรรมเป็นรากฐานของความสัมพันธ์ของเรา">Honest, transparent communication and ethical practices form the foundation of our relationships.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 data-en="Support" data-th="การสนับสนุน">Support</h3>
+                            <p data-en="Comprehensive guidance and assistance throughout your entire overseas career journey." data-th="คำแนะนำและความช่วยเหลืออย่างครอบคลุมตลอดการเดินทางอาชีพต่างประเทศทั้งหมดของคุณ">Comprehensive guidance and assistance throughout your entire overseas career journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>UDON SKM</h3>
+                    <p>Your trusted partner for overseas career opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UDON SKM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

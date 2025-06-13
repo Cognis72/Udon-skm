@@ -1,48 +1,271 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">UDON SKM</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UDON SKM - Overseas Job Placement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">UDON SKM</div>
-    <button id="hamburger">☰</button>
-    <nav id="nav-links">
-      <a href="index.html" id="nav-home">หน้าแรก</a>
-      <a href="about.html" id="nav-about">เกี่ยวกับเรา</a>
-      <a href="jobs.html" id="nav-jobs">งานที่เปิดรับ</a>
-      <a href="process.html" id="nav-process">ขั้นตอน</a>
-      <a href="contact.html" id="nav-contact">ติดต่อ</a>
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('th')">TH</button>
-    </nav>
-  </header>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo/Brand -->
+                <div class="nav-logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">UDON SKM</a></h2>
+                </div>
 
-  <section>
-    <h1 id="contact-heading">ติดต่อเรา</h1>
-    <p id="contact-desc">หากมีคำถามหรือต้องการสมัคร กรุณากรอกแบบฟอร์มด้านล่าง</p>
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-en="About" data-th="เกี่ยวกับเรา">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html" class="nav-link" data-en="Jobs" data-th="งาน">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="process.html" class="nav-link" data-en="Process" data-th="ขั้นตอน">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                    </li>
+                </ul>
 
-    <form action="https://formspree.io/f/yourFormID" method="POST" id="contact-form">
-      <label for="name" id="label-name">ชื่อของคุณ</label><br />
-      <input type="text" name="name" required><br /><br />
+                <!-- Controls: Language, Theme Toggle and Mobile Menu Button -->
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-text">TH</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-      <label for="email" id="label-email">อีเมล</label><br />
-      <input type="email" name="email" required><br /><br />
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title" data-en="Contact Us" data-th="ติดต่อเรา">Contact Us</h1>
+                    <p class="page-subtitle" data-en="Ready to start your overseas career journey? Get in touch with our expert team today." data-th="พร้อมที่จะเริ่มต้นการเดินทางอาชีพต่างประเทศของคุณหรือยัง? ติดต่อทีมผู้เชี่ยวชาญของเราวันนี้">Ready to start your overseas career journey? Get in touch with our expert team today.</p>
+                </div>
+            </div>
+        </section>
 
-      <label for="message" id="label-message">ข้อความ</label><br />
-      <textarea name="message" rows="5" required></textarea><br /><br />
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <h2 class="contact-title">Get Started with Your Career Journey</h2>
+                        <p class="contact-subtitle">
+                            Ready to explore overseas opportunities? Fill out the form below and our team will contact you within 24 hours.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+66 2 123 4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@udonskm.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Office</h4>
+                                    <p>123 Sukhumvit Road, Bangkok 10110, Thailand</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Office Hours</h4>
+                                    <p>Mon-Fri: 9:00 AM - 6:00 PM (GMT+7)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Line Official</h4>
+                                    <p>@udonskm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-group">
+                                <label for="name" data-en="Full Name *" data-th="ชื่อเต็ม *">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name" data-en-placeholder="Enter your full name" data-th-placeholder="กรอกชื่อเต็มของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="age" data-en="Age *" data-th="อายุ *">Age *</label>
+                                <input type="number" id="age" name="age" required min="18" max="65" placeholder="Enter your age" data-en-placeholder="Enter your age" data-th-placeholder="กรอกอายุของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="line_id" data-en="Line ID *" data-th="ไลน์ไอดี *">Line ID *</label>
+                                <input type="text" id="line_id" name="line_id" required placeholder="Enter your Line ID" data-en-placeholder="Enter your Line ID" data-th-placeholder="กรอกไลน์ไอดีของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-en="Email Address *" data-th="ที่อยู่อีเมล *">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address" data-en-placeholder="Enter your email address" data-th-placeholder="กรอกที่อยู่อีเมลของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-en="Phone Number" data-th="หมายเลขโทรศัพท์">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" data-en-placeholder="Enter your phone number" data-th-placeholder="กรอกหมายเลขโทรศัพท์ของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="education" data-en="Education Level *" data-th="ระดับการศึกษา *">Education Level *</label>
+                                <select id="education" name="education" required>
+                                    <option value="" data-en="Select your education level" data-th="เลือกระดับการศึกษาของคุณ">Select your education level</option>
+                                    <option value="high_school" data-en="High School" data-th="มัธยมศึกษา">High School</option>
+                                    <option value="diploma" data-en="Diploma/Certificate" data-th="ประกาศนียบัตร">Diploma/Certificate</option>
+                                    <option value="bachelor" data-en="Bachelor's Degree" data-th="ปริญญาตรี">Bachelor's Degree</option>
+                                    <option value="master" data-en="Master's Degree" data-th="ปริญญาโท">Master's Degree</option>
+                                    <option value="phd" data-en="PhD" data-th="ปริญญาเอก">PhD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience" data-en="Work Experience" data-th="ประสบการณ์การทำงาน">Work Experience</label>
+                                <select id="experience" name="experience">
+                                    <option value="" data-en="Select your experience level" data-th="เลือกระดับประสบการณ์ของคุณ">Select your experience level</option>
+                                    <option value="fresh" data-en="Fresh Graduate" data-th="จบใหม่">Fresh Graduate</option>
+                                    <option value="1-2" data-en="1-2 years" data-th="1-2 ปี">1-2 years</option>
+                                    <option value="3-5" data-en="3-5 years" data-th="3-5 ปี">3-5 years</option>
+                                    <option value="6-10" data-en="6-10 years" data-th="6-10 ปี">6-10 years</option>
+                                    <option value="10+" data-en="10+ years" data-th="10+ ปี">10+ years</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferred_country" data-en="Preferred Destination" data-th="ปลายทางที่ต้องการ">Preferred Destination</label>
+                                <select id="preferred_country" name="preferred_country">
+                                    <option value="" data-en="Select preferred country" data-th="เลือกประเทศที่ต้องการ">Select preferred country</option>
+                                    <option value="japan" data-en="Japan" data-th="ญี่ปุ่น">Japan</option>
+                                    <option value="singapore" data-en="Singapore" data-th="สิงคโปร์">Singapore</option>
+                                    <option value="australia" data-en="Australia" data-th="ออสเตรเลีย">Australia</option>
+                                    <option value="south_korea" data-en="South Korea" data-th="เกาหลีใต้">South Korea</option>
+                                    <option value="malaysia" data-en="Malaysia" data-th="มาเลเซีย">Malaysia</option>
+                                    <option value="taiwan" data-en="Taiwan" data-th="ไต้หวัน">Taiwan</option>
+                                    <option value="other" data-en="Other" data-th="อื่นๆ">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job_category" data-en="Interested Job Category" data-th="หมวดงานที่สนใจ">Interested Job Category</label>
+                                <select id="job_category" name="job_category">
+                                    <option value="" data-en="Select job category" data-th="เลือกหมวดงาน">Select job category</option>
+                                    <option value="technology" data-en="Technology & IT" data-th="เทคโนโลยีและไอที">Technology & IT</option>
+                                    <option value="healthcare" data-en="Healthcare" data-th="สาธารณสุข">Healthcare</option>
+                                    <option value="engineering" data-en="Engineering" data-th="วิศวกรรม">Engineering</option>
+                                    <option value="manufacturing" data-en="Manufacturing" data-th="การผลิต">Manufacturing</option>
+                                    <option value="hospitality" data-en="Hospitality" data-th="การบริการ">Hospitality</option>
+                                    <option value="education" data-en="Education" data-th="การศึกษา">Education</option>
+                                    <option value="finance" data-en="Finance" data-th="การเงิน">Finance</option>
+                                    <option value="other" data-en="Other" data-th="อื่นๆ">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-en="Additional Information" data-th="ข้อมูลเพิ่มเติม">Additional Information</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about your experience, preferred destination, or any questions you have" data-en-placeholder="Tell us about your experience, preferred destination, or any questions you have" data-th-placeholder="บอกเราเกี่ยวกับประสบการณ์ ปลายทางที่ต้องการ หรือคำถามใดๆ ที่คุณมี"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button primary form-submit" data-en="Send Application" data-th="ส่งใบสมัคร">Send Application</button>
+                            <p class="form-note" data-en="* Required fields. We respect your privacy and will never share your information." data-th="* ช่องที่จำเป็น เราเคารพความเป็นส่วนตัวของคุณและจะไม่แบ่งปันข้อมูลของคุณ">
+                                * Required fields. We respect your privacy and will never share your information.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <button type="submit" id="submit-btn">ส่งข้อความ</button>
-    </form>
-  </section>
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How long does the placement process take?</h3>
+                        <p>The typical placement process takes 4-6 months from initial consultation to departure. This can vary depending on the specific job requirements and destination country.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What are the fees for your services?</h3>
+                        <p>Our consultation and initial assessment are completely free. Service fees are only applicable after successful job placement and are transparent with no hidden costs.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you provide visa assistance?</h3>
+                        <p>Yes, we provide comprehensive visa assistance including document preparation, application guidance, and embassy appointment coordination.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What support do you offer after arrival?</h3>
+                        <p>We provide 6 months of post-arrival support including accommodation assistance, cultural orientation, and workplace integration guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 UDON SKM. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>UDON SKM</h3>
+                    <p>Your trusted partner for overseas career opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UDON SKM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

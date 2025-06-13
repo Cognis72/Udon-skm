@@ -1,35 +1,278 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">งานที่เปิดรับ - UDON SKM</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities - UDON SKM - Overseas Job Placement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">UDON SKM</div>
-    <button id="hamburger">☰</button>
-    <nav id="nav-links">
-      <a href="jobs.html" id="nav-home">หน้าแรก</a>
-      <a href="about.html" id="nav-about">เกี่ยวกับเรา</a>
-      <a href="jobs.html" id="nav-jobs">งานที่เปิดรับ</a>
-      <a href="process.html" id="nav-process">ขั้นตอน</a>
-      <a href="contact.html" id="nav-contact">ติดต่อ</a>
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('th')">TH</button>
-    </nav>
-  </header>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo/Brand -->
+                <div class="nav-logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">UDON SKM</a></h2>
+                </div>
 
-  <section>
-    <h1 id="jobs-heading">บริการจัดหางานไปต่างประเทศอย่างถูกกฎหมาย</h1>
-    <p id="jobs-desc">พร้อมดูแลทุกขั้นตอน โดยทีมงานมืออาชีพ</p>
-    <a  
-  </section>
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-en="About" data-th="เกี่ยวกับเรา">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html" class="nav-link active" data-en="Jobs" data-th="งาน">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="process.html" class="nav-link" data-en="Process" data-th="ขั้นตอน">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                    </li>
+                </ul>
 
-  <footer>
-    <p>© 2025 UDON SKM. All rights reserved.</p>
-  </footer>
-  <script src="assets/js/script.js"></script>
+                <!-- Controls: Language, Theme Toggle and Mobile Menu Button -->
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-text">TH</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title" data-en="Global Job Opportunities" data-th="โอกาสงานระดับโลก">Global Job Opportunities</h1>
+                    <p class="page-subtitle" data-en="Discover exciting career opportunities across the world with competitive packages and comprehensive support." data-th="ค้นพบโอกาสอาชีพที่น่าตื่นเต้นทั่วโลกพร้อมแพ็คเกจที่แข่งขันได้และการสนับสนุนอย่างครอบคลุม">Discover exciting career opportunities across the world with competitive packages and comprehensive support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Categories -->
+        <section class="job-categories">
+            <div class="container">
+                <h2 class="section-title" data-en="Popular Job Categories" data-th="หมวดงานยอดนิยม">Popular Job Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2M9 11V9a2 2 0 1 1 4 0v2M9 11h6"></path>
+                            </svg>
+                        </div>
+                        <h3 data-en="Technology & IT" data-th="เทคโนโลยีและไอที">Technology & IT</h3>
+                        <p data-en="Software development, data analysis, cybersecurity, and digital innovation roles" data-th="การพัฒนาซอฟต์แวร์ การวิเคราะห์ข้อมูล ความปลอดภัยทางไซเบอร์ และบทบาทนวัตกรรมดิจิทัล">Software development, data analysis, cybersecurity, and digital innovation roles</p>
+                        <div class="category-stats">
+                            <span data-en="500+ positions" data-th="500+ ตำแหน่ง">500+ positions</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3 data-en="Healthcare" data-th="สาธารณสุข">Healthcare</h3>
+                        <p data-en="Nursing, medical technicians, healthcare administration, and specialized care" data-th="การพยาบาล เทคนิคการแพทย์ การบริหารสาธารณสุข และการดูแลเฉพาะทาง">Nursing, medical technicians, healthcare administration, and specialized care</p>
+                        <div class="category-stats">
+                            <span data-en="300+ positions" data-th="300+ ตำแหน่ง">300+ positions</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 data-en="Engineering" data-th="วิศวกรรม">Engineering</h3>
+                        <p data-en="Civil, mechanical, electrical, and industrial engineering opportunities" data-th="โอกาสทางวิศวกรรมโยธา เครื่องกล ไฟฟ้า และอุตสาหกรรม">Civil, mechanical, electrical, and industrial engineering opportunities</p>
+                        <div class="category-stats">
+                            <span data-en="250+ positions" data-th="250+ ตำแหน่ง">250+ positions</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Manufacturing</h3>
+                        <p>Production management, quality control, and skilled manufacturing roles</p>
+                        <div class="category-stats">
+                            <span>400+ positions</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-6 0v4"></path>
+                                <rect x="2" y="9" width="20" height="12" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                        <h3>Hospitality</h3>
+                        <p>Hotel management, tourism, restaurant services, and customer experience</p>
+                        <div class="category-stats">
+                            <span>200+ positions</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Teaching positions, educational administration, and training roles</p>
+                        <div class="category-stats">
+                            <span>150+ positions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="destinations">
+            <div class="container">
+                <h2 class="section-title">Popular Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-flag">🇯🇵</div>
+                        <h3>Japan</h3>
+                        <p>High-tech industries, manufacturing, and service sectors with excellent benefits</p>
+                        <div class="destination-info">
+                            <span class="salary-range">¥3.5M - ¥8M annually</span>
+                            <span class="visa-info">Work visa provided</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-flag">🇸🇬</div>
+                        <h3>Singapore</h3>
+                        <p>Financial hub with opportunities in banking, tech, and logistics</p>
+                        <div class="destination-info">
+                            <span class="salary-range">S$50K - S$120K annually</span>
+                            <span class="visa-info">Employment pass</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-flag">🇦🇺</div>
+                        <h3>Australia</h3>
+                        <p>Mining, healthcare, and skilled trades with pathway to residency</p>
+                        <div class="destination-info">
+                            <span class="salary-range">A$60K - A$150K annually</span>
+                            <span class="visa-info">Skilled worker visa</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-flag">🇰🇷</div>
+                        <h3>South Korea</h3>
+                        <p>Technology, automotive, and manufacturing with modern work culture</p>
+                        <div class="destination-info">
+                            <span class="salary-range">₩40M - ₩80M annually</span>
+                            <span class="visa-info">E-7 work visa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="requirements">
+            <div class="container">
+                <h2 class="section-title">General Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>Bachelor's degree or equivalent</li>
+                            <li>Relevant certifications</li>
+                            <li>Professional qualifications</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>2+ years relevant work experience</li>
+                            <li>Demonstrated skills in field</li>
+                            <li>Leadership experience preferred</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>Language</h3>
+                        <ul>
+                            <li>English proficiency (IELTS/TOEFL)</li>
+                            <li>Local language basics preferred</li>
+                            <li>Communication skills</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>Documentation</h3>
+                        <ul>
+                            <li>Valid passport</li>
+                            <li>Medical clearance</li>
+                            <li>Background verification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="jobs-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Global Career?</h2>
+                    <p>Browse available positions and apply today. Our team will guide you through every step of the process.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-button primary">Apply Now</a>
+                        <a href="process.html" class="cta-button secondary">Learn About Our Process</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>UDON SKM</h3>
+                    <p>Your trusted partner for overseas career opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UDON SKM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
